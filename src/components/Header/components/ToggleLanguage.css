@@ -1,0 +1,74 @@
+/* ToggleLanguage.css */
+.language-switch {
+	position: relative;
+	display: inline-block;
+	width: 55px;
+	height: 29px;
+}
+
+.language-switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.language-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f0f0f0;
+	transition: 0.4s;
+	border-radius: 34px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.language-slider.round {
+	border-radius: 34px;
+}
+
+.language-slider .flag {
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	object-fit: cover;
+	top: 2px;
+	transition: 0.5s;
+	border: 2px solid white;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.language-slider .es-flag {
+	left: 4px;
+	opacity: 1;
+}
+
+.language-slider .en-flag {
+	right: 4px;
+	opacity: 0;
+}
+
+.language-switch input:checked + .language-slider .es-flag {
+	opacity: 0;
+	transform: translateX(30px);
+}
+
+.language-switch input:checked + .language-slider .en-flag {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.language-slider:hover {
+	background-color: #e0e0e0;
+}
+
+.language-switch input:focus + .language-slider {
+	box-shadow: 0 0 1px #2196f3;
+}
+
+.language-switch input:active + .language-slider {
+	transform: scale(0.98);
+}

@@ -1,0 +1,273 @@
+/* Variables CSS */
+:root {
+	--header-height: 110px;
+
+	/* Colores para modo claro */
+	--primary-color-light: rgba(202, 240, 248);
+	--secondary-color-light: rgba(144, 224, 239);
+	--tertiary-color-light: rgba(72, 202, 228);
+	--header-color-light: rgba(113, 155, 163, 0.774);
+	--text-color-light: rgb(0, 0, 0);
+	--a-color-light: rgba(144, 225, 239, 0.479);
+	--b-color-light: rgba(72, 202, 228, 0.479);
+	--bg-color-section2-light: #fafafa;
+	--bg-color-buttons-light: #e0e0e0;
+
+	/* Colores para modo oscuro */
+	--primary-color-dark: rgb(3, 4, 94);
+	--secondary-color-dark: rgb(2, 62, 138);
+	--tertiary-color-dark: rgb(0, 119, 182);
+	--header-color-dark: rgba(1, 1, 31, 0.76);
+	--text-color-dark: rgb(205, 208, 209);
+	--a-color-dark: rgba(2, 61, 138, 0.479);
+	--b-color-dark: rgba(0, 118, 182, 0.473);
+	--bg-color-section2-dark: #6a6a6a;
+	--bg-color-buttons-dark: #6a6a6a;
+
+	/* Sombras */
+	--box-shadow: 10px 0px 20px rgb(0, 149, 199);
+	--text-shadow: 4px 0px 1px rgb(0, 0, 0);
+	--shadow: 10px 4px 30px rgb(0, 0, 0);
+
+	/* z-index */
+	--z-fixed: 1;
+	--z-modal: 2;
+
+	/* Tipografía */
+	--normal-font-size: 16px;
+	--small-font-size: 12px;
+
+	/* Pesos de fuente */
+	--font-semi-bold: 600;
+
+	/* Márgenes */
+	--mr-2: 16px;
+	--mr-3: 20px;
+	--mr-4: 26px;
+}
+
+/* Estilos globales */
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	max-width: 100%;
+	margin: 0;
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: inherit;
+	}
+	body {
+		background-color: var(--primary-color-light);
+		color: var(--text-color);
+		margin: 0;
+		max-width: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		max-height: 100vh; /* o la altura que necesites */
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		text-decoration: none;
+		font-family: 'Playfair Display', serif;
+		color: var(--text-color-light);
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	h1 {
+		font-family: 'Playfair Display', serif;
+		font-weight: 900;
+		font-size: 35px;
+	}
+	h2 {
+		font-family: 'Playfair Display', serif;
+		font-weight: 800;
+		font-size: 30px;
+	}
+	h3 {
+		font-family: 'Playfair Display', serif;
+		font-size: 20px;
+		font-weight: 700;
+	}
+	p {
+		font-family: 'Playfair Display', serif;
+		font-weight: 600;
+		font-size: 15px;
+	}
+
+	.full-page-loader {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		width: 100vw;
+		background: rgba(0, 0, 0, 0.7);
+	}
+
+	/* darkmode */
+	&:has([name='color-scheme']:checked) {
+		color-scheme: dark;
+	}
+	&:has([name='color-scheme']) {
+		color-scheme: light;
+	}
+
+	/* scrollbar  */
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: linear-gradient(
+			to bottom,
+			var(--tertiary-color-light),
+			var(--primary-color-dark)
+		);
+		border-radius: 4px;
+	}
+
+	.dark-mode &::-webkit-scrollbar-thumb {
+		background: linear-gradient(
+			to bottom,
+			var(--tertiary-color-dark),
+			var(--primary-color-light)
+		);
+	}
+
+	.dark-mode {
+		background-color: var(--primary-color-dark);
+		color: var(--text-color-dark);
+	}
+	.btn {
+		text-decoration: none;
+		width: 130px;
+		height: 70px;
+		color: var(--text-color);
+		font-family: 'Playfair Display', serif;
+		background-image: linear-gradient(rgb(82, 167, 196), rgb(81, 84, 187));
+		border-radius: 8px;
+		border: 0px;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		&:hover {
+			background-image: linear-gradient(rgb(0, 150, 199), rgb(6, 8, 148));
+			box-shadow: var(--box-shadow);
+		}
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.button {
+		text-decoration: none;
+		width: 150px;
+		height: 60px;
+		padding: 10px;
+		display: flex;
+		color: var(--text-color);
+		background-image: linear-gradient(rgb(82, 167, 196), rgb(81, 84, 187));
+		border-radius: 8px;
+		&:hover {
+			background-image: linear-gradient(rgb(0, 150, 199), rgb(6, 8, 148));
+			box-shadow: var(--box-shadow);
+		}
+	}
+
+	/* Secciones */
+	.section {
+		padding: 0;
+		justify-content: center;
+	}
+	.section__title {
+		text-align: center;
+		margin: var(--mr-3) 0;
+	}
+	.sAbout {
+		background-color: var(--primary-color-light);
+		padding: 0.5rem;
+		box-shadow: var(--shadow);
+	}
+	.sSkills {
+		background-color: var(--secondary-color-light);
+		padding: 0.5rem;
+		box-shadow: var(--shadow);
+	}
+	.sPortfolio {
+		background-color: var(--tertiary-color-light);
+		padding: 0.5rem;
+		box-shadow: var(--shadow);
+	}
+
+	.sContact {
+		background-color: var(--a-color-light);
+		padding: 0.5rem;
+		box-shadow: var(--shadow);
+	}
+	/* Modo oscuro */
+	.dark-mode {
+		background-color: var(--primary-color-dark);
+		color: var(--text-color-dark);
+	}
+
+	.dark-mode .nav {
+		background-color: var(--header-color-dark);
+		color: var(--text-color-dark);
+	}
+
+	.dark-mode .menu.open {
+		background-color: var(--header-color-dark);
+	}
+
+	.dark-mode .nav-link {
+		color: var(--text-color-dark);
+	}
+
+	.dark-mode .nav-link:hover {
+		color: var(--tertiary-color-dark);
+	}
+
+	.dark-mode .toggle-button {
+		color: var(--text-color-dark);
+	}
+
+	.dark-mode .menu-toggle {
+		color: var(--text-color-dark);
+	}
+	.dark-mode .sAbout {
+		background-color: var(--primary-color-dark);
+	}
+	.dark-mode .sSkills {
+		background-color: var(--secondary-color-dark);
+	}
+	.dark-mode .sPortfolio {
+		background-color: var(--tertiary-color-dark);
+	}
+	.dark-mode .sContact {
+		background-color: var(--a-color-dark);
+	}
+	@media (width >= 768px) {
+		:root {
+			--header-height: 90px;
+			--normal-font-size: 20px;
+			--small-font-size: 15px;
+		}
+		.button {
+			display: inline;
+			padding: 25px;
+		}
+	}
+}

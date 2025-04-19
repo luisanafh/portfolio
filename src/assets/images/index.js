@@ -1,0 +1,21 @@
+export { default as hero } from './descripcion.gif';
+export { default as me } from './luisana.jpg';
+export { default as imgDes1 } from './image1.jpg';
+export { default as imgDes2 } from './image2.jpg';
+export { default as imgDes3 } from './image3.jpg';
+export { default as es } from './espana.png';
+export { default as en } from './reino-unido.png';
+export { default as html } from './HTML5.png';
+export { default as css } from './CSS3.png';
+export { default as js } from './JavaScript.png';
+export { default as react } from './react.png';
+export { default as node } from './node.png';
+export { default as ts } from './typeScript.png';
+export { default as w } from './wordpress.png';
+export { default as postgreSQL } from './postgreSQL.png';
+
+export { default as IMGPRO1 } from './proyectogalleta.png';
+export { default as IMGPRO2 } from './proyectoclima.png';
+export { default as IMGPRO3 } from './rickandmorty.png';
+export { default as IMGPRO4 } from './usercrud.png';
+export { default as IMGPRO5 } from './pokedex.png';
