@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-scroll';
 import { FaGlobe, FaBars, FaTimes } from 'react-icons/fa';
-import './Navbar.css';
+import './NavBar.css';
 import { AppContext } from './context/AppContext';
 import Logo from './Logo';
 import ToggleDarkMode from './ToggleDarkmode';
