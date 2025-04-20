@@ -1,5 +1,5 @@
+export { default as me } from './Luisana.jpg';
 export { default as hero } from './descripcion.gif';
-export { default as me } from './luisana.jpg';
 export { default as imgDes1 } from './image1.jpg';
 export { default as imgDes2 } from './image2.jpg';
 export { default as imgDes3 } from './image3.jpg';
