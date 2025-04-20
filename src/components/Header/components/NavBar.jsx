@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-scroll';
-import { FaGlobe, FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import './NavBar.css';
 import { AppContext } from './context/AppContext';
 import Logo from './Logo';
