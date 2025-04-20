@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from 'react';
-import './ToggleDarkMode.css';
+
+import './ToggleDarkmode.css';
 
 const ToggleDarkMode = ({ darkMode, onChange }) => {
 	return (
