@@ -69,7 +69,7 @@ const Contact = () => {
 							</li>
 							<li className="footer__social-item animation">
 								<a
-									href="https://www.linkedin.com/in/luisana-fuster-hernandez-a30a71245/"
+									href="https://www.linkedin.com/in/luisana-fuster-hern%C3%A1ndez-a30a71245/"
 									className="footer__social-link"
 									target="_blank"
 									rel="noreferrer"
