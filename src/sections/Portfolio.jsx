@@ -58,7 +58,7 @@ function Portfolio() {
 							<div className="projects__buttons">
 								<button className="btn projects__button" type="button">
 									<a
-										href="https://galletadelafortunaluisana.netlify.app/"
+										href="https://restaurantluisana.netlify.app/"
 										target="_blank"
 										rel="noopener noreferrer"
 										className="projects__link"
@@ -68,7 +68,7 @@ function Portfolio() {
 								</button>
 								<button className="btn projects__button" type="button">
 									<a
-										href="https://github.com/luisanafh/galleta-de-la-fortuna"
+										href="https://github.com/luisanafh/restaurant"
 										className="projects__link"
 										target="_blank"
 										rel="noopener noreferrer"
