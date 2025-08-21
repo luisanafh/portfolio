@@ -14,7 +14,7 @@ export { default as ts } from './typeScript.png';
 export { default as w } from './wordpress.png';
 export { default as postgreSQL } from './postgreSQL.png';
 
-export { default as IMGPRO1 } from './proyectogalleta.png';
+export { default as IMGPRO1 } from './restaurant.png';
 export { default as IMGPRO2 } from './proyectoclima.png';
 export { default as IMGPRO3 } from './rickandmorty.png';
 export { default as IMGPRO4 } from './usercrud.png';

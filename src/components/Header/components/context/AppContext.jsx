@@ -34,9 +34,9 @@ export const AppProvider = ({ children }) => {
 			viewDemo: 'VER DEMO',
 			viewCode: 'VER CÓDIGO',
 			viewDocumentation: 'VER DOCUMENTACIÓN',
-			project1Title: 'Galleta de la Fortuna',
+			project1Title: 'Restaurante',
 			project1Description:
-				'Aplicación interactiva que muestra mensajes aleatorios al hacer clic en una galleta virtual. Desarrollada con JavaScript puro.',
+				'Sitio web elegante para restaurante ficticio, creado con React y Tailwind CSS. Incluye un menú interactivo con platillos gourmet, diseño responsivo y efectos visuales sofisticados, además de integración con redes sociales.',
 			project2Title: 'App del Clima',
 			project2Description:
 				'Aplicación meteorológica que muestra el clima actual utilizando una API de pronóstico del tiempo. Desarrollada con React.',
@@ -80,9 +80,9 @@ export const AppProvider = ({ children }) => {
 			viewDemo: 'VIEW DEMO',
 			viewCode: 'VIEW CODE',
 			viewDocumentation: 'VIEW DOCUMENTATION',
-			project1Title: 'Fortune Cookie',
+			project1Title: 'restaurant',
 			project1Description:
-				'Interactive application that shows random messages when clicking on a virtual cookie. Developed with pure JavaScript.',
+				'Elegant website for a fictional restaurant built with React and Tailwind CSS. Features an interactive menu showcasing gourmet dishes, responsive design, refined visual effects, and social media integration.',
 			project2Title: 'Weather App',
 			project2Description:
 				'Weather application that shows current weather using a weather forecast API. Developed with React.',

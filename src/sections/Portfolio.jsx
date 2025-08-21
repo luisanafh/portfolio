@@ -40,8 +40,8 @@ function Portfolio() {
 							<img
 								className="projects__image"
 								src={IMGPRO1}
-								alt="Galleta de la Fortuna"
-								title="Galleta de la Fortuna"
+								alt="restaurant"
+								title="restaurant"
 								data-aos="zoom-in"
 								data-aos-delay="200"
 							/>
